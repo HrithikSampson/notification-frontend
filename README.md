@@ -1,4 +1,5 @@
 🚀 Next.js App
+
 This is a Next.js application bootstrapped with create-next-app.
 
 🛠 Prerequisites
