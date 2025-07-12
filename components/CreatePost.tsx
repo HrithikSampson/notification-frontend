@@ -25,7 +25,7 @@ export default function CreatePost({
 
     setIsLoading(true)
     try {
-      const response = await fetch(`${process.env.NEXT_APP_BACKEND_URL}/posts`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/posts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

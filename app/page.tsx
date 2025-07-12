@@ -19,7 +19,7 @@ export default function Home() {
   const { data: posts = [], isLoading } = useQuery({
     queryKey: ["posts"],
     queryFn: async () => {
-      const response = await fetch(`${process.env.NEXT_APP_BACKEND_URL}/posts`)
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/posts`)
       if (!response.ok) throw new Error("Failed to fetch posts")
       return response.json()
     },
@@ -34,7 +34,7 @@ export default function Home() {
     setSocketId(userId)
 
     // Initialize socket connection
-    const newSocket = io(`${process.env.NEXT_APP_BACKEND_URL}`, {
+    const newSocket = io(`${process.env.NEXT_PUBLIC_BACKEND_URL}`, {
       query: { userId },
     })
 
@@ -79,7 +79,7 @@ export default function Home() {
 
   const fetchNotifications = async (userId: string) => {
     try {
-      const response = await fetch(`${process.env.NEXT_APP_BACKEND_URL}/notifications`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/notifications`, {
         headers: {
           "x-socket-id": userId,
         },
