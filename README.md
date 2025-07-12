@@ -11,20 +11,17 @@ npm or yarn
 Optional: Docker (for containerization)
 
 📦 Install Dependencies
-bash
-Copy
-Edit
+```
 npm install
 # or
 yarn install
+```
 ⚙️ Environment Variables
 Create a .env.local file in the root directory:
-
-bash
-Copy
-Edit
+```
 # .env.local
 NEXT_PUBLIC_BACKEND_URL=http://localhost:4500
+```
 🔐 Prefix with NEXT_PUBLIC_ to expose to the frontend.
 
 🧪 Run the Dev Server
