@@ -25,17 +25,15 @@ NEXT_PUBLIC_BACKEND_URL=http://localhost:4500
 🔐 Prefix with NEXT_PUBLIC_ to expose to the frontend.
 
 🧪 Run the Dev Server
-bash
-Copy
-Edit
+```
 npm run dev
 # or
 yarn dev
+```
 By default, the app runs at: http://localhost:3000
 
 🧱 Build for Production
-bash
-Copy
-Edit
+```
 npm run build
 npm run start
+```
